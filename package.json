@@ -1,0 +1,39 @@
+{
+  "name": "@phetw/awesome-panel",
+  "version": "2.0.0",
+  "description": "An example of lit-element setup that works on IE11",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "start": "web-dev-server --open demo/ --node-resolve --esbuild-target auto",
+    "test": "web-test-runner test/**/*.test.js --coverage --node-resolve",
+    "test:watch": "web-test-runner test/**/*.test.js --node-resolve --watch"
+  },
+  "keywords": [
+    "webcomponent",
+    "lit-element",
+    "example"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@phetw"
+  },
+  "author": "Wasuwat Limsuparhat <wasuwat.se@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@ungap/custom-elements": "^0.1.10",
+    "lit-element": "^2.4.0",
+    "lit-html": "^1.3.0",
+    "webpack": "^5.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@web/dev-server": "0.0.15",
+    "@web/test-runner": "^0.9.4",
+    "@webcomponents/webcomponentsjs": "^2.4.4",
+    "babel-loader": "^8.2.2",
+    "webpack-cli": "^4.2.0"
+  }
+}
